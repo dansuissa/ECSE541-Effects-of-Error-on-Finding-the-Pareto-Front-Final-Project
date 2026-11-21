@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "complete": true,
+  "n_architectures": 15625,
+  "n_trials": 36986,
+  "protocol": {
+    "dataset": "cifar100",
+    "split": "x-valid",
+    "training_epochs": 200,
+    "epoch_index": 199,
+    "network_config": {
+      "channel": 16,
+      "num_cells": 5,
+      "class_num": 100
+    },
+    "aggregation": "arithmetic mean over all available training seeds",
+    "latency_source": "NAS-Bench-201 recorded GPU latency",
+    "latency_unit": "ms",
+    "latency_batch_size": 256,
+    "latency_policy": "mean of positive per-trial means; missing trials retained",
+    "objective_names": [
+      "validation_error_pct",
+      "latency_ms"
+    ],
+    "objective_directions": [
+      "min",
+      "min"
+    ],
+    "accuracy_unit": "percent",
+    "error_unit": "percentage points",
+    "auxiliary_cost_policy": "retain per-trial values; flag cross-seed differences; aggregate by arithmetic mean"
+  },
+  "provenance": {
+    "kind": "official",
+    "source_name": "NAS-Bench-201-v1_1-096897.pth",
+    "source_sha256": "2317a7dc911654322f4f932730a821cf38ecc5b5f1adde0aff26ff6b3f736666",
+    "source_url": "https://drive.google.com/file/d/16Y0UwGisiouVRxW-W5hEtbxmcHw_0hF_/view",
+    "authors_url": "https://github.com/D-X-Y/NAS-Bench-201",
+    "reader": "projected legacy PyTorch pickle; unused learning curves omitted",
+    "extractor_version": "1.1.0",
+    "hardware_note": "Original recorded GPU timing, batch 256; no new hardware measurements.",
+    "api_parity_architectures": 15625
+  },
+  "operations": [
+    "none",
+    "skip_connect",
+    "nor_conv_1x1",
+    "nor_conv_3x3",
+    "avg_pool_3x3"
+  ],
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "feature_names": [
+    "edge_0_1:none",
+    "edge_0_1:skip_connect",
+    "edge_0_1:nor_conv_1x1",
+    "edge_0_1:nor_conv_3x3",
+    "edge_0_1:avg_pool_3x3",
+    "edge_0_2:none",
+    "edge_0_2:skip_connect",
+    "edge_0_2:nor_conv_1x1",
+    "edge_0_2:nor_conv_3x3",
+    "edge_0_2:avg_pool_3x3",
+    "edge_1_2:none",
+    "edge_1_2:skip_connect",
+    "edge_1_2:nor_conv_1x1",
+    "edge_1_2:nor_conv_3x3",
+    "edge_1_2:avg_pool_3x3",
+    "edge_0_3:none",
+    "edge_0_3:skip_connect",
+    "edge_0_3:nor_conv_1x1",
+    "edge_0_3:nor_conv_3x3",
+    "edge_0_3:avg_pool_3x3",
+    "edge_1_3:none",
+    "edge_1_3:skip_connect",
+    "edge_1_3:nor_conv_1x1",
+    "edge_1_3:nor_conv_3x3",
+    "edge_1_3:avg_pool_3x3",
+    "edge_2_3:none",
+    "edge_2_3:skip_connect",
+    "edge_2_3:nor_conv_1x1",
+    "edge_2_3:nor_conv_3x3",
+    "edge_2_3:avg_pool_3x3",
+    "count:none",
+    "count:skip_connect",
+    "count:nor_conv_1x1",
+    "count:nor_conv_3x3",
+    "count:avg_pool_3x3",
+    "active_edges",
+    "input_output_paths",
+    "reachable_nodes",
+    "useful_edges"
+  ],
+  "files": {
+    "benchmark.csv": "165a699c8e386455dafaa5508b97290b92de619299f2d73a0020d416e7328a78",
+    "trials.csv": "3c9285bc1b79e365f4f42a973ef3e73e1b979f5924df033f10c2648e85301263"
+  }
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecse541-benchmark"
+version = "1.1.0"
+description = "Auditable NAS-Bench-201 inputs for studying evaluation error"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+extract = ["gdown>=5.2"]
+test = ["pytest>=7"]
+
+[project.scripts]
+ecse541-benchmark = "ecse541_benchmark.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["ecse541_benchmark*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

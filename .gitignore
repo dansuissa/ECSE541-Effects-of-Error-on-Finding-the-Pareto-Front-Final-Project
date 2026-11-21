@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+/build/
+/dist/
+/data/*
+!/data/benchmark.csv
+!/data/trials.csv
+!/data/manifest.json
+/raw/
+/rebuilt_data/
+*.pth
+*.part
+

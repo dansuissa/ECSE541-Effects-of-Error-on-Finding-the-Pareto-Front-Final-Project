@@ -1,0 +1,64 @@
+{
+  "validation_date": "2026-11-21",
+  "python": "3.14.3",
+  "numpy": "2.4.2",
+  "matplotlib": "3.11.0",
+  "pytest": "9.1.1",
+  "tests": {
+    "command": "python -m pytest -q",
+    "passed": 66,
+    "skipped": 0,
+    "elapsed_seconds": 43.41
+  },
+  "upstream_api_sha256": {
+    "__init__.py": "86b42828ac8881e4c9e00bd12a5363529cb0ca8550724d332607044935a95c25",
+    "api_201.py": "5a04c4bffd6f199cc00fa43e842cdaf88d372eef02ee909f637166bd33d790cb",
+    "api_utils.py": "de4affc9ed00b9dd869c9eb1bc5258ed1bedd62674945fd7dfd99b40fc3ff840"
+  },
+  "full_source_validation": {
+    "source_name": "NAS-Bench-201-v1_1-096897.pth",
+    "source_size_bytes": 5003180601,
+    "source_sha256": "2317a7dc911654322f4f932730a821cf38ecc5b5f1adde0aff26ff6b3f736666",
+    "architecture_ids_checked": 15625,
+    "trial_records_checked": 36986,
+    "api_parity_architectures": 15625,
+    "eligible_architectures": 15625,
+    "exported_bundle_checks": "File hashes and all recomputed aggregates passed on reload during build."
+  },
+  "independent_unprojected_source_check": {
+    "method": "Independent unprojected source-prefix read and authors API",
+    "arch_id": 0,
+    "arch_str": "|avg_pool_3x3~0|+|nor_conv_1x1~0|skip_connect~1|+|nor_conv_1x1~0|skip_connect~1|skip_connect~2|",
+    "validation_accuracy_pct": 52.70000000406901,
+    "latency_ms": 13.182918230692545,
+    "seeds": [
+      777,
+      888,
+      999
+    ],
+    "matches_exported_csv": true
+  },
+  "teammate_handoff_review": {
+    "fresh_git_checkout_with_autocrlf": true,
+    "data_checksums_preserved": true,
+    "wheel_build_and_install": true,
+    "installed_import_outside_repository": true,
+    "real_dataset_cli": true,
+    "n_architectures": 15625,
+    "n_eligible": 15625,
+    "handoff_example": true,
+    "validation_seconds": 29.76,
+    "dependencies": "Preinstalled dependencies reused in a new virtual environment; network install unavailable.",
+    "build": "Wheel built with setuptools backend and installed with pip.",
+    "ci_status": "Configured; remote GitHub jobs have not run yet.",
+    "tested_module_sha256": {
+      "__init__.py": "599c3685da086d78c35bf4fc577d348ce26ef5c65bd66ec23ac0fedba66e2324",
+      "__main__.py": "e9b81e67682764c5fc148d3474b83c937a37a02543d933fd429158d147dc2daf",
+      "_stream.py": "eea9ba31b4d1af4dc08209b286b32848d0cc8b5edbfbb13193b3a813b661b2ac",
+      "architecture.py": "128368523b155aebaeab14e0196c2b8d246b187fa6199415fb1fd790924703ff",
+      "audit.py": "f34392b3fe84a1d1112b3fe9393beb86cc5c2ab1a5dbb62b0e368200727c0019",
+      "benchmark.py": "bfecd9e6e0cf2a82e42e89bd8d0f2052c055e2fc6dc8b1c8a31b2e7ff6f399ac",
+      "extract.py": "b9540099b3f0280f003fe6ef563b9197daade13c3e8d1a27271814e4f4e03508"
+    }
+  }
+}
